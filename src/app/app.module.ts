@@ -6,7 +6,7 @@ import { HttpModule  } from '@angular/http';
 import { AppComponent } from './app.component';
 import { GmapComponent } from './gmap/gmap.component';
 import { LoginComponent } from './login/login.component';
-import { AuthService } from './auth.service'
+import { GmapService } from './gmap.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +29,8 @@ import { AuthService } from './auth.service'
     ])
   ],
   providers: [
-    AuthService
+
+    GmapService
   ],
   bootstrap: [AppComponent]
 })
